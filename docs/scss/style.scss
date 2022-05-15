@@ -467,4 +467,77 @@
         top: 10px
     }
 }
+
+.modalForms{
+    position: fixed;
+    opacity: 0;
+    z-index: -10234;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #333, $alpha: 0.6);
+    &__container{
+        padding: 40px;
+        min-width: 80%
+    }
+}
+.modalForms--active{
+    z-index: 294857293245623;
+
+    opacity: 1;
+}
+.form{
+    background-color: #fff;
+    position: relative;
+    max-width: 789px;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: center;
+    display: flex;  
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 1px 39px 7px red;
+    &__title{
+        font-size: 20px;
+        line-height: 22px;
+        padding: 20px
+    }
+    &__input{
+        margin: 20px 0;
+        width: 80%;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: rgba($color: #fff, $alpha: 1);
+        color: #ff0026;
+        border: 1px solid rgba($color: #ff1e40, $alpha: 1)
+    }
+    &__button{
+        color: #e51937;
+        border: 2px solid #e51937;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 16px;
+        font-weight: 700;
+        display: block;
+        padding: 15px 35px;
+        margin: 40px 0 20px 0;
+        &:hover{
+            color: #fff;
+            background-color: #ff0026;
+        }        
+    }
+    .exit{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+    }
+}
 @import "media.style.scss";
